@@ -1,1 +1,5 @@
-# 22ndjune2021_devops
+<img src=kernel.png>
+
+
+
+<img src=os-flavours.png>
