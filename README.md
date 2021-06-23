@@ -10,4 +10,4 @@
 
 Task:
 
-<img src=directory-task.png>
+<img src=direcotry-task.png>
