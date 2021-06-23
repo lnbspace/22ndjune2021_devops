@@ -1,1 +1,6 @@
-# 22ndjune2021_devops
+<img src=dir-structure.png>
+
+
+
+
+<img src=commands.png>
