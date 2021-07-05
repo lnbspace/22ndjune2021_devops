@@ -1,0 +1,54 @@
+    1  pwd 
+    2  whoami
+    3  cat /etc/pa
+    4  cat /etc/passwd
+    5  cat /etc/os-release 
+    6  ls
+    7  clear
+    8  sudo apt-get remove docker docker-engine docker.io containerd runc
+    9  sudo apt-get update
+   10  sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg     lsb-release
+   11  echo   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+   12    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   13  sudo apt-get install docker-ce docker-ce-cli containerd.io
+   14  docker
+   15  docker run  -it ubuntu bash
+   16  sudo docker run  -it ubuntu bash
+   17  docker ps
+   18  sudo docker ps
+   19  sudo docker ps -a
+   20  sudo docker run  -d ubuntu bash
+   21  docker ps
+   22  sudo docker ps
+   23  docker ps -a
+   24  sudo docker ps -a
+   25  history 
+   26  ls
+   27  docker run -td ubuntu bash
+   28  sudo docker run -td ubuntu bash
+   29  docker ps
+   30  sudo docker ps
+   31  docker run -td ubuntu bash
+   32  sudo docker run -td ubuntu bash
+   33  docker ps
+   34  sudo docker ps
+   35  sudo docker exec -it ecstatic_mahavira bash
+   36  docker ps
+   37  sudo docker ps
+   38  sudo docker
+   39  docker ps
+   40  sudo docker ps
+   41  sudo docker kill hopeful_elbakyan
+   42  docker ps
+   43  sudo docker ps
+   44  sudo docker ps -a
+   45  docker ps
+   46  sudo docker ps
+   47  docker stop ecstatic_mahavira
+   48  sudo docker stop ecstatic_mahavira
+   49  docker ps
+   50  sudo docker ps
+   51  sudo docker ps -a
+   52  sudo -i
+   53  history 
+
