@@ -6,4 +6,4 @@
 
 
 
-<img src=proxy_config.png>
+<img src=proxy_conf.png>
