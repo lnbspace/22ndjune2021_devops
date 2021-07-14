@@ -1,1 +1,5 @@
-# 22ndjune2021_devops
+<img src=reverse_proxy.png>
+
+
+
+<img src=forward_proxy.png>
