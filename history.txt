@@ -1,0 +1,57 @@
+    1  apt update
+    2  apt install  nginx
+    3  apt install  nginx -y
+    4  curl localhost
+    5  \
+    6  netstat
+    7  apt install net-tools
+    8  netstat 
+    9  netstat  --help
+   10  netstat  -ntpl
+   11  systemctl  status  nginx
+   12  systemctl  enable nginx
+   13  systemctl  --help
+   14  systemctl  disable nginx
+   15  systemctl  status  nginx.service 
+   16  systemctl  status nginx.service 
+   17  systemctl  enable nginx.service 
+   18  systemctl  status nginx.service 
+   19  systemctl  start  nginx.service 
+   20  systemctl  start  nginx.service
+   21  cd /etc/nginx/
+   22  ls
+   23  vim nginx.conf 
+   24  cd sites-available/
+   25  ls
+   26  vim default 
+   27  cd /var/www/html/
+   28  ls
+   29  vim index.html
+   30  ls
+   31  mkdir hello
+   32  cd hello/
+   33  pwd
+   34  echo "hii lnb" > index.html
+   35  ls
+   36  cd /etc/nginx/
+   37  ls
+   38  cd sites-available/
+   39  ls
+   40  vim default 
+   41  systemctl  restart nginx.service 
+   42  ls
+   43  rm @
+   44  ls
+   45  vim default 
+   46  cd /etc/nginx/sites-available/
+   47  ls
+   48  vim default 
+   49  systemctl  restart nginx
+   50  vim default 
+   51  systemctl  status nginx
+   52  systemctl  restart nginx
+   53  vim default 
+   54  systemctl  restart nginx
+   55  cd
+   56  history 
+   57  history > history.txt
