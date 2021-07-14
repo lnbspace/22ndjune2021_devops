@@ -55,3 +55,4 @@
    55  cd
    56  history 
    57  history > history.txt
+   58  ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
