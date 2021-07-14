@@ -7,3 +7,6 @@
 
 
 <img src=proxy_conf.png>
+
+
+<img src=task.png>
