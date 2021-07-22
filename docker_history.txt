@@ -1,0 +1,83 @@
+    1  vim /etc/ssh/sshd_config
+    2  systemctl  restart  sshd
+    3  passwd ubuntu 
+    4  passwd root 
+    5  vim /etc/ssh/sshd_config
+    6  systemctl  restart  sshd
+    7  sudo apt-get update
+    8  sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg     lsb-release
+    9  echo   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   10  sudo apt-get update
+   11  sudo apt-get install docker-ce docker-ce-cli containerd.io
+   12  docker run hello-world
+   13  systemctl  status  docker
+   14  docker run -d --name new  nginx:alpine 
+   15  docker ps
+   16  docker run -d --name new1 -p 8081:80  nginx:alpine 
+   17  docker images
+   18  docker ps
+   19  curl http://100.26.220.236:8081/
+   20  curl http://localhost:8081/
+   21  curl http://100.26.220.236:8081/
+   22  curl http://localhost:8081/
+   23  docker ps
+   24  docker exec -it new1  sh
+   25  docker ps
+   26  docker run -d --name new2 -p 8081:80 nginx:alpine 
+   27  docker run -d --name new2 -p 8082:80 nginx:alpine 
+   28  docker run -d --name new4 -p 8082:80 nginx:alpine 
+   29  docker ps
+   30  ls
+   31  mkdir lnb
+   32  ls
+   33  cd lnb/
+   34  ls
+   35  vim Dockerfile
+   36  cat Dockerfile 
+   37  docker build .  
+   38  cat Dockerfile 
+   39  vim Dockerfile
+   40  docker build .  
+   41  vim Dockerfile
+   42  docker build .  
+   43  vim Dockerfile
+   44  docker build .  
+   45  vim Dockerfile
+   46  docker build .
+   47  docker images
+   48  vim Dockerfile 
+   49  docker build .
+   50  vim Dockerfile 
+   51  docker build .
+   52  vim Dockerfile 
+   53  docker  build .
+   54  docker images 
+   55  docker  build . -t myimage:1
+   56  docker images
+   57  history 
+   58  ls
+   59  docker run myimage:1 
+   60  docker ps
+   61  docker ps -a
+   62  vim Dockerfile 
+   63  docker build . -t myimage:2
+   64  docker images
+   65  docker run myimage:2 
+   66  vim Dockerfile 
+   67  docker build . -t myimage:3
+   68  docker images
+   69  docker run myimage:3 
+   70  vim Dockerfile 
+   71  docker ps
+   72  docker build . -t myimage:4
+   73  docker images
+   74  docker run myimage:4 
+   75  history 
+   76  docker images
+   77  docker tag myimage:4 bhuvnesh94/sleep:300
+   78  docker images
+   79  docker login
+   80  docker push  bhuvnesh94/sleep:300 
+   81  history 
+   82  history  > docker_history.txt
