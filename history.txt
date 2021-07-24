@@ -1,0 +1,131 @@
+    1  vim /etc/ssh/sshd_config
+    2  systemctl  restart  sshd
+    3  passwd ubuntu 
+    4  passwd root 
+    5  vim /etc/ssh/sshd_config
+    6  systemctl  restart  sshd
+    7  sudo apt-get update
+    8  sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg     lsb-release
+    9  echo   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+   10    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   11  sudo apt-get update
+   12  sudo apt-get install docker-ce docker-ce-cli containerd.io
+   13  docker run hello-world
+   14  systemctl  status  docker
+   15  docker run -d --name new  nginx:alpine 
+   16  docker ps
+   17  docker run -d --name new1 -p 8081:80  nginx:alpine 
+   18  docker images
+   19  docker ps
+   20  curl http://100.26.220.236:8081/
+   21  curl http://localhost:8081/
+   22  curl http://100.26.220.236:8081/
+   23  curl http://localhost:8081/
+   24  docker ps
+   25  docker exec -it new1  sh
+   26  docker ps
+   27  docker run -d --name new2 -p 8081:80 nginx:alpine 
+   28  docker run -d --name new2 -p 8082:80 nginx:alpine 
+   29  docker run -d --name new4 -p 8082:80 nginx:alpine 
+   30  docker ps
+   31  ls
+   32  mkdir lnb
+   33  ls
+   34  cd lnb/
+   35  ls
+   36  vim Dockerfile
+   37  cat Dockerfile 
+   38  docker build .  
+   39  cat Dockerfile 
+   40  vim Dockerfile
+   41  docker build .  
+   42  vim Dockerfile
+   43  docker build .  
+   44  vim Dockerfile
+   45  docker build .  
+   46  vim Dockerfile
+   47  docker build .
+   48  docker images
+   49  vim Dockerfile 
+   50  docker build .
+   51  vim Dockerfile 
+   52  docker build .
+   53  vim Dockerfile 
+   54  docker  build .
+   55  docker images 
+   56  docker  build . -t myimage:1
+   57  docker images
+   58  history 
+   59  ls
+   60  docker run myimage:1 
+   61  docker ps
+   62  docker ps -a
+   63  vim Dockerfile 
+   64  docker build . -t myimage:2
+   65  docker images
+   66  docker run myimage:2 
+   67  vim Dockerfile 
+   68  docker build . -t myimage:3
+   69  docker images
+   70  docker run myimage:3 
+   71  vim Dockerfile 
+   72  docker ps
+   73  docker build . -t myimage:4
+   74  docker images
+   75  docker run myimage:4 
+   76  history 
+   77  docker images
+   78  docker tag myimage:4 bhuvnesh94/sleep:300
+   79  docker images
+   80  docker login
+   81  docker push  bhuvnesh94/sleep:300 
+   82  history 
+   83  history  > docker_history.txt
+   84  pwd
+   85  ls
+   86  history 
+   87  docker ps
+   88  ls
+   89  cd lnb/
+   90  sl
+   91  l
+   92  ls
+   93  cat Dockerfile 
+   94  ls
+   95  docker build --help
+   96  vim Dockerfile-date
+   97  docker build . -f Dockerfile-date -t myimage:nginx
+   98  vim Dockerfile-date
+   99  docker build . -f Dockerfile-date -t myimage:nginx
+  100  vim Dockerfile-date
+  101  docker build . -f Dockerfile-date -t myimage:nginx
+  102  docker images 
+  103  docker run myimage:nginx 
+  104  vim Dockerfile-date 
+  105  docker build . -f Dockerfile-date -t myimage:nginx
+  106  docker images
+  107  docker run myimage:nginx 
+  108  ls
+  109  docker ps
+  110  docker ps -a
+  111  x=1
+  112  echo $x
+  113  ls
+  114  git clone https://github.com/bhuvnesh94/22ndjune2021_devops.git
+  115  ls
+  116  cd 22ndjune2021_devops/
+  117  l
+  118  git checkout  -b  day14
+  119  ls
+  120  vim index.html
+  121  ls
+  122  vim Dockerfile
+  123  docker build . -t nginx:custom
+  124  docker run -p 8083:80 nginx:custom 
+  125  ls
+  126  cd lnb/
+  127  ls
+  128  cd 22ndjune2021_devops/
+  129  sl
+  130  ls
+  131  history > history.txt
